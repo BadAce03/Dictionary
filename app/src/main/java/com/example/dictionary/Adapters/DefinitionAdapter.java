@@ -32,8 +32,8 @@ public class DefinitionAdapter extends RecyclerView.Adapter<DefinitionViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull DefinitionViewHolder holder, int position) {
-        holder.textView_definition.setText("https:" + definitionsList.get(position).getDefinition());
-        holder.textView_example.setText("https:" + definitionsList.get(position).getExample());
+        holder.textView_definition.setText( definitionsList.get(position).getDefinition());
+        holder.textView_example.setText( definitionsList.get(position).getExample());
         StringBuilder synonyms = new StringBuilder();
         StringBuilder antonyms = new StringBuilder();
 
